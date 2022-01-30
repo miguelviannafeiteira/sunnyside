@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Barlow;
+  color: black;
+}
+
+h1, h2, h3 {
+  font-family:  Fraunces;
+}
+
+img{
+  max-width: 100%;
+}
+
+.App{
+  width: 900px;
+  margin: 0 auto;
+}
+
+
+header {
+  max-width: 900px;
+  height: 500px;
+  background:url(images/desktop/image-header.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  .creative-div{
+    display: grid;
+    justify-content: center;
+    .arrow {
+      margin: 0 auto;
+      width: 25px;
+      margin-top: 70px;
+    }
+  h1{
+    color: hsl(0, 0%, 100%) ;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+}
+
+
+
+.header-top{
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  padding: 30px 20px 30px 20px;
+  .sunnyside{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Fraunces;
+    color: hsl(0, 0%, 100%) ;
+    padding-left: 10px;
+  }
+  ul{
+    display: flex;
+    li{
+      padding-top: 0;
+      padding: 0 10px 0 10px;
+      a{
+      color: hsl(0, 0%, 100%);
+      font-size: 14px;
+      opacity: .8;
+      padding:5px 0 5px 0;
+    }
+    }
+  }
+  .contact{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    color: black;
+    font-size: 14px;
+    font-family: Fraunces;
+    font-size: 14px;
+  }
+}
+
+main{
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-template-rows: 1fr 1fr;
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: flex-start;
+    margin: 0 10px 0 50px;
+    width: 348px;
+    h2{
+      font-weight: 900;
+      font-size: 30px;
+      opacity: .8;
+    }
+    p{
+      font-size: 14px;
+      line-height: 20px;
+      color: hsl(213, 9%, 39%);
+      opacity: .8;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    a{
+      font-family: Fraunces;
+      font-weight: 900;
+    }
+    a::after{
+      content: "";
+      background-color: hsl(7, 99%, 70%);
+      opacity: .2;
+      display: block;
+      width: 125px;
+      height: 10px;
+      border-radius: 10px;
+      margin-top: -6px;
+      margin-left: -5px;
+
+    }
+  }
+  .cherry{
+    background: url(./images/desktop/image-graphic-design.jpg);
+    background-size: contain;
+    width: 450px;
+    height: 375px;
+    margin: 0;
+    h2{
+      font-size: 24px;
+      margin: 180px auto 0 auto;
+      color: hsl(167, 40%, 24%);
+    }
+    p{
+      width: 300px;
+      margin: 30px auto 0 auto;
+      text-align: center;
+    }
+  }
+  
+  .tangerine{
+    background: url(./images/desktop/image-photography.jpg);
+    background-size: contain;
+    width: 450px;
+    height: 375px;
+    margin: 0;
+    h2{
+      font-size: 24px;
+      margin: 180px auto 0 auto;
+      color: hsl(198, 62%, 26%);
+    }
+    p{
+      width: 300px;
+      margin: 30px auto 0 auto;
+      text-align: center;
+    }
+  }
+}
+
+.test{
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 70px 0;
+  letter-spacing: 5px;
+  font-family:Fraunces;
+  color:hsl(213, 9%, 39%) ;
+  opacity: .6;
+}
+
+.profiles {
+  display: flex;
+  div ~ div {
+    margin-left: 30px;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    img {
+      border-radius: 50%;
+      width:80px;
+    }
+    p{
+      margin-top: 50px;
+      text-align: center;
+      color: hsl(213, 9%, 39%);
+      font-size: 14px;
+      line-height: 20px;
+    }
+    h3{
+      margin-top: 50px;
+    }
+    span{
+      margin-top: 	10px;
+      color: hsl(232, 10%, 55%);
+      opacity: .7;
+    }
+  }
+}
+
+.photos{
+  margin-top: 100px;
+  display: flex;
+  width: 225px;
+}
+
+footer {
+  background: #A3DDCF;
+  display: grid;
+  justify-content: center;
+  h1{
+    margin: 30px auto 0 auto;
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 24px;
+    color:hsl(167, 40%, 24%);
+    opacity: .9;
+  }
+  ul{
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    li ~ li{
+        padding-left: 50px;
+    }
+    li a{
+    color:hsl(167, 40%, 24%);
+    opacity: .7;    
+    }
+  }
+}
+
+.footer-redes {
+  display: flex;
+  justify-content: space-evenly;
+}
