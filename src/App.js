@@ -15,6 +15,13 @@ import orange from './images/desktop/image-gallery-orange.jpg';
 import sugarcubes from './images/desktop/image-gallery-sugarcubes.jpg';
 
 function App() {
+  function openMenu(event) {
+    const headerNav = document.querySelector('.header-nav');
+    headerNav.classList.toggle('active');
+    event.target.classList.toggle('active');
+    console.log(event.target);
+  }
+
   return (
     <div className="App">
       <header>
@@ -22,7 +29,8 @@ function App() {
           <a className="sunnyside" href="./">
             sunnyside
           </a>
-          <ul>
+          <button className="btn" onClick={openMenu}></button>
+          <ul className="header-nav">
             <li>
               <a href="./">About</a>
             </li>
@@ -54,7 +62,7 @@ function App() {
           </p>
           <a href="./">LEARN MORE</a>
         </div>
-        <img src={transform} alt="ovo" />
+        <img className="ovo" src={transform} alt="ovo" />
 
         <img src={stand} alt="" />
         <div>
