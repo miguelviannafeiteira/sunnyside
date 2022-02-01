@@ -15,11 +15,9 @@ import orange from './images/desktop/image-gallery-orange.jpg';
 import sugarcubes from './images/desktop/image-gallery-sugarcubes.jpg';
 
 function App() {
-  function openMenu(event) {
-    const headerNav = document.querySelector('.header-nav');
-    headerNav.classList.toggle('active');
-    event.target.classList.toggle('active');
-    console.log(event.target);
+  function openMenu({ target }) {
+    target.nextElementSibling.classList.toggle('active');
+    target.classList.toggle('active');
   }
 
   return (

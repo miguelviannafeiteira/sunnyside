@@ -178,6 +178,17 @@ header {
     .header-nav.active {
       display: block;
     }
+    .header-nav.active :before {
+      border-bottom: 10px solid #fff;
+      border-left: 10px solid transparent;
+      content: "";
+      display: block;
+      height: 0;
+      position: absolute;
+      top: -10px;
+      left: 170px;
+      width: 0;
+  }
   }
 
   .contact{
